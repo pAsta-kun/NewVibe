@@ -1,18 +1,11 @@
 {
-    "manifest_version": 2,
-    "name": "trying something new",
-    "version": "1.0",
+  "manifest_version": 2,
+  "name": "Vibe",
+  "version": "1.0",
 
-    "description": "my first extention",
+  "permissions": ["theme"],
 
-    "content_scripts": [
-        {
-            "matches": ["*://www.chess.com/game/*"],
-            "js": ["app.js"]
-        }
-    ],
-
-    "permissions": [
-        "*://google.com/*"
-    ]
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
 }

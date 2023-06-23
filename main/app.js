@@ -1,40 +1,13 @@
-const elo = document.getElementsByClassName('user-tagline-white');
-const chatEloGain = document.querySelectorAll('[data-cy="live-game-start-rating"]');
-const chatElo = document.getElementsByClassName('user-rating');
-let eloChangeTimer;
-let counter = 0;
+let timeElement = document.getElementById('time');
 
-function change()
-{
-    eloChangeTimer = setInterval(function() 
-    {
-        console.log(chatElo[0])
-        chatEloGain[0].innerHTML = "???"
-        for(let i = elo.length-1; i > -1; i--)
-        {
-            elo[i].innerHTML = '???'
-            counter++;
-            
-        }
-        for(let i = 0; i < chatElo.length; i++)
-        {
-            console.log(chatEloGain)
-            chatEloGain[i].innerHTML = "???"
-        }
-        for(let i = 0; i < chatEloGain.length; i++)
-        {
-            console.log(chatEloGain)
-            chatEloGain[i].innerHTML = "???"
-        }
-        if(counter > 100)
-        {
-            clearInterval(eloChangeTimer);
-        }
-    }, 1);
-
+function updateTime() {
+    let date = new Date();
+    let time = date.toLocaleTimeString();
+    timeElement.innerText = time;
 }
-change();
-window.onhashchange = function() {
-    change();
-};
-  
+
+// Call updateTime once to set the time immediately
+updateTime();
+
+// Then call updateTime every 1000 milliseconds (1 second)
+setInterval(updateTime, 1000);
