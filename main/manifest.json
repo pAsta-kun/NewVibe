@@ -7,7 +7,7 @@
 
     "content_scripts": [
         {
-            "matches": ["*://docs.google.com/document/*"],
+            "matches": ["*://www.chess.com/game/*"],
             "js": ["app.js"]
         }
     ],
