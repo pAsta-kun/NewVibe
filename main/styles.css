@@ -1,8 +1,9 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url("bedroom.gif");
+    background-image: url("assets/bedroom.gif");
     background-size: 100%;
+    background-position: 25% 70%;
     overflow: hidden;
     color: #f7f7f7;
     font-family: 'Press Start 2P', cursive;
@@ -15,4 +16,7 @@ body{
 }
 #time{
     font-size: 64px;
+}
+h1{
+    user-select: none;
 }
