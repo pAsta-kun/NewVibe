@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "Vibe",
+  "version": "1.1.1",
+
+  "permissions": ["theme"],
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
