@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "8-bit Vibe",
+  "version": "1.1.1",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "background": {
+    "service_worker": "app.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
