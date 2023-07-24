@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
-  "name": "Vibe",
-  "version": "1.1.1",
+  "name": "8-bit Vibe",
+  "version": "1.2.2",
 
   "permissions": ["theme"],
 
