@@ -12,8 +12,9 @@ function setBackground()
 {
     let random = Math.floor(Math.random()*6.99)
     document.body.style.background = `url(${backgrounds[random]})`;
-    document.body.style.backgroundSize = "100%"; 
-    document.body.style.backgroundPosition = "25% 75%"; 
+    document.body.style.backgroundSize = "cover"; 
+    document.body.style.backgroundPosition = "center"; 
+    document.body.style.backgroundRepeat = 'no-repeat'
     if(random == 0)
     {
         document.body.style.color = '#CA8BA3'
@@ -21,7 +22,6 @@ function setBackground()
     if(random == 1)
     {
         document.body.style.color = '#FF87A1'
-        document.body.style.backgroundPosition = "bottom"; 
     }
         
     if(random == 2)
@@ -35,15 +35,13 @@ function setBackground()
     if(random == 6)
     {
         document.body.style.color = '#96152D'
-        document.body.style.backgroundSize = "125%";
     }
         
 
 }
 
-// Call updateTime once to set the time immediately
+// Call updateTime & setBackground once to set them up
 updateTime();
 setBackground();
-// Then call updateTime every 1000 milliseconds (1 second)
+//  call updateTime every sec
 setInterval(updateTime, 1000);
-// setInterval(setBackground, 3600000);

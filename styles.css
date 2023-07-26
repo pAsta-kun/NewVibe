@@ -2,8 +2,9 @@ body{
     width: 100vw;
     height: 100vh;
     background-image: url("assets/bedroom.gif");
-    background-size: 100%;
-    background-position: 25% 70%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
     color: #f7f7f7;
     font-family: 'Press Start 2P', cursive;
