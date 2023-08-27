@@ -1,0 +1,11 @@
+{
+  "manifest_version": 2,
+  "name": "8-bit Vibe",
+  "version": "1.2.3",
+
+  "permissions": ["theme"],
+
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  }
+}
